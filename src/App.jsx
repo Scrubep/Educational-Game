@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Settings from './pages/Settings/Settings';
+import Game1 from './pages/Game1/Game1';
 import Navbar from './components/Navbar';
 import './App.css';
 
@@ -18,16 +20,25 @@ function App() {
     }, [darkTheme]);
 
     return (
-        <Router>
-            <div className='app'>
-                <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
-                <Routes>
-                    <Route path='/' element={<div>Home Page</div>}/>
-                    <Route path='/settings' element={<Settings/>}/>
-                    <Route path='/about' element={<About/>}/>
-                </Routes>
-            </div>
-        </Router>
+        <>
+            <Router>
+                <div className='app'>
+                    <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+                    <Routes>
+                        <Route path='/' element={<Home/>}/>
+                        <Route path='/settings' element={<Settings/>}/>
+                        <Route path='/about' element={<About/>}/>
+                        <Route path='/game1' element={<Game1/>}/>
+                    </Routes>
+                </div>
+            </Router>
+            
+            <footer>
+                <div className='footer-container'>
+                    <p>&copy; 2025 Joey Choi</p>
+                </div>
+            </footer>
+        </>
     )
 }
 

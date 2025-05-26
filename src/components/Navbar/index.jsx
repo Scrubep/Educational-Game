@@ -15,12 +15,6 @@ const Navbar = function Navbar({darkTheme, setDarkTheme}) {
                     <Link to='/about'>About</Link>
                 </li>
             </ul>
-            <button 
-                className='theme-toggle'
-                onClick={() => setDarkTheme(!darkTheme)}
-            >
-                {darkTheme ? '☀' : '🌙 '}
-            </button>
         </nav>
     );
 }
