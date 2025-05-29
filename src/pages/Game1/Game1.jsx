@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import RiddleGame from '../../components/RiddleGame/RiddleGame';
+import WordDropGame from '../../components/WordDropGame/WordDropGame';
 // Adding more
 
 function Game1() {
@@ -11,8 +12,8 @@ function Game1() {
         <div className='game1-container'>
             <h1>Game 1 Name</h1>
             {stage === 0 && <RiddleGame onComplete={nextStage} />}
-            {/* {stage === 1 && <RiddleQuiz onComplete={nextStage} />}
-            {stage === 2 && <WordPairing onComplete={nextStage} />} */}
+            {stage === 1 && <WordDropGame onComplete={nextStage} />}
+            {/* {stage === 2 && <WordPairing onComplete={nextStage} />} */}
         </div>
     )
 }
