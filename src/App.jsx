@@ -29,6 +29,8 @@ function App() {
                         <Route path='/settings' element={<Settings/>}/>
                         <Route path='/about' element={<About/>}/>
                         <Route path='/game1' element={<Game1/>}/>
+                        {/* <Route path='/game2' element={<Game2/>}/>
+                        <Route path='/game3' element={<Game3/>}/> */}
                     </Routes>
                 </div>
             </Router>
