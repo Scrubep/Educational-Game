@@ -16,7 +16,7 @@ function Home() {
 
             <section>
                 <div>
-                    <Link to='game1'>
+                    <Link to='/game1'>
                         <img src='https://placehold.co/200x200/png'/>
                     </Link>
                     <p>Game 1</p>
@@ -25,7 +25,7 @@ function Home() {
 
             <section>
                 <div>
-                    <Link to='game2'>
+                    <Link to='/game2'>
                         <img src='https://placehold.co/200x200/png'/>
                     </Link>
                     <p>Game 2</p>

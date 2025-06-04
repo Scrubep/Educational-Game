@@ -5,12 +5,13 @@ import WordDropGame from '../../components/WordDropGame/WordDropGame';
 import TransitionScreen from '../../components/TransitionScreen/TransitionScreen';
 
 function Game1() {
+    
     const [stage, setStage] = useState('transition0');
 
     const handleTransition0 = () => setStage('riddle');
     const handleRiddleComplete = () => setStage('transition1');
-    const handleWordDropComplete = () => setStage('transition2');
     const handleTransition1 = () => setStage('worddrop');
+    const handleWordDropComplete = () => setStage('transition2');
     const handleTransition2 = () => setStage('end');
 
     return (
