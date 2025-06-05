@@ -1,0 +1,68 @@
+.riddle-game {
+  background-color: rgba(20, 25, 40, 0.8);
+  border: 2px solid #00ffcc;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  text-align: center;
+  box-shadow: 0 0 20px #00ffcc;
+  font-family: 'Barlow', sans-serif;
+}
+
+.riddle-game p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  background-color: #1a1f2e;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 16px;
+}
+
+.option-btn:hover {
+  background-color: #00ffcc;
+  color: #1a1f2e;
+  transform: scale(1.05);
+}
+
+.option-btn.selected {
+  background-color: #00cc99;
+  color: #0a0f1a;
+}
+
+.feedback {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  color: #1a1f2e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.next-btn:hover {
+  background-color: #00cc99;
+}

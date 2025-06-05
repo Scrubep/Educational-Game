@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
-import DraggableItem from "../DraggableItem/DraggableItem";
-import DropTarget from "../DropTarget/DropTarget";
-import SourceList from "../SourceList/SourceList";
+import DraggableItem from "../../DraggableItem/DraggableItem";
+import DropTarget from "../../DropTarget/DropTarget";
+import SourceList from "../../SourceList/SourceList";
 import "./SpaceshipGame.css";
 
 const initialItems = [

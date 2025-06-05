@@ -4,7 +4,7 @@ import './ReflexGame.css';
 function ReflexGame({ onComplete }) {
     const totalSpots = 20;
     const totalTargets = 10;
-    const timeLimit = 10;
+    const timeLimit = 15;
 
     const [targets, setTargets] = useState([]);
     const [clicked, setClicked] = useState(new Set());
@@ -60,8 +60,11 @@ function ReflexGame({ onComplete }) {
 
     return (
         <div className="reflex-game">
-            <h2>Click all the targets!</h2>
-            <p>Time left: {timeLeft}s</p>
+            <h2>Collect all the rocks!</h2>
+            <p className={`countdown ${timeLeft <= 3 ? 'urgent' : ''}`}>
+                Time left: {timeLeft}s
+            </p>
+
             <div className="grid">
                 {Array.from({ length: totalSpots }, (_, id) => {
                     const isTarget = targets.includes(id);
@@ -72,7 +75,7 @@ function ReflexGame({ onComplete }) {
                             className={`grid-item ${isTarget ? 'target' : ''} ${isClicked ? 'clicked' : ''}`}
                             onClick={() => handleClick(id)}
                         >
-                            {isTarget && !isClicked ? '🎯' : ''}
+                            {isTarget && !isClicked ? '🌙' : ''}
                         </div>
                     );
                 })}

@@ -1,8 +1,10 @@
+import './transitionScreen.css'
+
 function TransitionScreen({ message, onContinue }) {
     return (
         <div className="transition-screen">
             <p>{message}</p>
-            <button onClick={onContinue}>Continue</button>
+            <button className='continue-button' onClick={onContinue}>Continue</button>
         </div>
     );
 }

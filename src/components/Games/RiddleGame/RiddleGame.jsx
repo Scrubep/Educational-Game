@@ -13,9 +13,21 @@ const riddles = [
     answer: "Clock",
   },
   {
-    question: "I go up but never come down. What am I?",
-    options: ["Balloon", "The Sun", "Age", "Height"],
-    answer: "Age",
+    question: "What building has the most stories?",
+    options: ["Skyscraper", "Tower", "Mansion", "Library"],
+    answer: "Library",
+  },
+
+  {
+    question: "What has legs, but doesn't walk?",
+    options: ["Table", "Dog", "Fish", "Aliens"],
+    answer: "Table",
+  },
+
+  {
+    question: "What can you catch, but not throw?",
+    options: ["Frisbee", "Football", "Cold", "Ice Cream"],
+    answer: "Cold",
   },
 ];
 

@@ -4,43 +4,50 @@ import './Home.css';
 // Should function as a route page for the different game pages
 function Home() {
     return(
-        <>
-            <section className='game-section'>
+        <div className='home-body'>
+            <section>
                 <div className='welcome-container'>
                     <h1>Welcome to Space!</h1>
-                    <p>My name is [insert name] and welcome to my adventure! We’re gonna have 
-                        an exciting time exploring the cosmos. However, my spaceship crash landed 
-                        on planet [something] and I need your help fixing it! Let’s go!</p>
+                    <p>
+                        You are an astronaut who's been sent to space in order to explore
+                        the cosmos! After you make sure that your dog has enough food, you
+                        go off on your spaceship ready to go. However, you forgot to charge your
+                        spaceship before leaving! You look for fuel but all you found is a bag
+                        of dog treats. You ruin out of fuel and crash into a mysterious planet and now 
+                        have to find a way to escape!
+                        <br/><br/>
+                        Good luck astronaut!
+                    </p>
                 </div>
             </section>
 
-            <section className='game-section'>
-                <div>
-                    <Link to='/game1'>
-                        <img src='https://placehold.co/200x200/png'/>
-                    </Link>
-                    <p>Game 1</p>
-                </div>
-            </section>
+           <Link to='/game1' style={{ textDecoration: 'none', color: 'inherit' }}>
+                <section className='game-section'>
+                    <div>
+                    <img src='https://placehold.co/400x300/png' alt='Into the Alien Ruins!' />
+                    <p><b>Into the Alien Ruins!</b></p>
+                    </div>
+                </section>
+            </Link>
 
-            <section>
-                <div>
-                    <Link to='/game2'>
-                        <img src='https://placehold.co/200x200/png'/>
-                    </Link>
-                    <p>Game 2</p>
-                </div>
-            </section>
+            <Link to='/game2' style={{ textDecoration: 'none', color: 'inherit' }}>
+                <section className='game-section'>
+                    <div>
+                    <img src='https://placehold.co/400x300/png' alt='Back to the Ship!' />
+                    <p><b>Exploring the Ruins!</b></p>
+                    </div>
+                </section>
+            </Link>
 
-            <section className='game-section'>
-                <div>
-                    <Link to='/game3'>
-                        <img src='https://placehold.co/200x200/png'/>
-                    </Link>
-                    <p>Game 3</p>
-                </div>
-            </section>
-        </>
+            <Link to='/game3' style={{ textDecoration: 'none', color: 'inherit' }}>
+                <section className='game-section'>
+                    <div>
+                    <img src='https://placehold.co/400x300/png' alt='Fixing The Spaceship!' />
+                    <p><b>Fixing The Spaceship!</b></p>
+                    </div>
+                </section>
+            </Link>
+        </div>
     );
 }
 

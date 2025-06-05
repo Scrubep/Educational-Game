@@ -1,0 +1,54 @@
+.worddrop-container {
+  background-color: rgba(20, 25, 40, 0.8);
+  border: 2px solid #00ffcc;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  text-align: center;
+  box-shadow: 0 0 20px #00ffcc;
+  font-family: 'Barlow', sans-serif;
+}
+
+.worddrop-container p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.drop-slot {
+  display: inline-block; 
+  min-width: 80px; 
+  border-bottom: 2px solid #00ffcc;
+  margin: 0 5px;
+  padding: 2px 4px;
+  vertical-align: middle;
+  color: #00ffcc;
+  cursor: pointer;
+}
+
+
+.source-bank {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.draggable-item {
+  background-color: #1a1f2e;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: grab;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.draggable-item:hover {
+  background-color: #00ffcc;
+  color: #0a0f1a;
+  transform: scale(1.05);
+}

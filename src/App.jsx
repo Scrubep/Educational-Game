@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Settings from './pages/Settings/Settings';
-import Game1 from './pages/Game1/Game1';
-import Game2 from './pages/Game2/Game2';
-import Game3 from './pages/Game3/Game3';
+import Game1 from './pages/GamePages/Game1/Game1';
+import Game2 from './pages/GamePages/Game2/Game2';
+import Game3 from './pages/GamePages/Game3/Game3';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
@@ -23,8 +24,10 @@ function App() {
 
     return (
         <>
+        <div className='app'>
             <Router>
-                <div className='app'>
+                <ScrollToTop />
+                <div className='main-content'>
                     <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
                     <Routes>
                         <Route path='/' element={<Home/>}/>
@@ -36,12 +39,14 @@ function App() {
                     </Routes>
                 </div>
             </Router>
+        </div>
             
             <footer>
                 <div className='footer-container'>
                     <p>&copy; 2025 Joey Choi</p>
                 </div>
             </footer>
+
         </>
     )
 }

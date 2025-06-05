@@ -1,0 +1,65 @@
+.math-game {
+  font-family: 'Barlow', sans-serif;
+  background: radial-gradient(circle at center, #0d0f1a 0%, #000000 100%);
+  color: #00ffe7;
+  padding: 30px;
+  border: 2px solid #00ffe7;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px #00ffe7;
+}
+
+.math-game h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 8px #00ffe7;
+}
+
+.problem {
+  margin-bottom: 20px;
+}
+
+.problem input {
+  background: #12141c;
+  border: 2px solid #00ffe7;
+  border-radius: 6px;
+  color: #00ffe7;
+  width: 60px;
+  padding: 5px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+button {
+  background: transparent;
+  border: 2px solid #00ffe7;
+  color: #00ffe7;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #00ffe7;
+  color: #000;
+}
+
+.status-message {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.status-message.success {
+  color: #00ff99;
+}
+
+.status-message.fail {
+  color: #ff4444;
+}

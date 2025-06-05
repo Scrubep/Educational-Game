@@ -11,7 +11,7 @@ function MemoryGame({ onComplete }) {
     const [lockBoard, setLockBoard] = useState(false);
 
     // Generate pairs of symbols
-    const symbols = ['🍎','🍌','🍇','🍊','🍉','🍓','🍍','🥝'];
+    const symbols = ['🚀','🪐','👨‍🚀','🌌','🌠','🛰️','☄️','🌙'];
 
     const shuffleCards = () => {
         const doubled = [...symbols, ...symbols];
@@ -59,7 +59,8 @@ function MemoryGame({ onComplete }) {
 
     return (
         <div className="memory-game">
-            <h2>Memory Match</h2>
+            <h2>Astronaut GPS</h2>
+            <p>Match the Icons!</p>
             <div className="grid">
                 {cards.map((card, index) => {
                     const isFlipped = flipped.includes(index) || matched.includes(card.symbol);

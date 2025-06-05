@@ -1,0 +1,102 @@
+.reflex-game {
+  background-color: rgba(10, 15, 30, 0.9);
+  border: 2px solid #00ffcc;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 40px auto;
+  color: #e0e0e0;
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+.reflex-game h2 {
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.reflex-game p {
+  font-size: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.grid-item {
+  width: 60px;
+  height: 60px;
+  background: #1a1f2e;
+  border: 2px solid #00ffcc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  color: #00ffcc;
+}
+
+.grid-item:hover {
+  background: #00ffcc;
+  color: #0a0f1a;
+  transform: scale(1.1);
+}
+
+.grid-item.clicked {
+  background: #00cc99;
+  color: #0a0f1a;
+  pointer-events: none;
+}
+
+.grid-item.target {
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 5px #ffcc00; }
+  100% { box-shadow: 0 0 20px #ffcc00; }
+}
+
+.countdown {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin: 10px 0;
+}
+
+.countdown.urgent {
+  color: #ff5555;
+  animation: flash 0.5s steps(2, start) infinite;
+}
+
+@keyframes flash {
+  to { visibility: hidden; }
+}
+
+.result {
+  margin-top: 25px;
+  color: #ffcc00;
+}
+
+.result button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  color: #1a1f2e;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.result button:hover {
+  background-color: #00cc99;
+}

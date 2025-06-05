@@ -1,13 +1,12 @@
 import { useDrop } from "react-dnd";
 import { ItemTypes } from "../constants";
-import DraggableItem from "../DraggableItem/DraggableItem";
 
 function DropTarget({ index, onDropItem, currentItem, expectedItemId }) {
   const [{ isOver }, drop] = useDrop(() => ({
     accept: ItemTypes.DRAG_ITEM,
     drop: (item) => {
-        const isCorrect = item.id === expectedItemId;
-        onDropItem(index, item, isCorrect);
+      const isCorrect = item.id === expectedItemId;
+      onDropItem(index, item, isCorrect);
     },
     collect: (monitor) => ({
       isOver: monitor.isOver(),
@@ -15,28 +14,34 @@ function DropTarget({ index, onDropItem, currentItem, expectedItemId }) {
   }));
 
   const renderContent = () => {
-    if (!currentItem) return "______";
+    if (!currentItem) return <span style={{ color: '#00ffcc', fontWeight: 'bold' }}>______</span>;
 
-    const base = currentItem.contentType === "word"
-      ? currentItem.value
-      : <img src={currentItem.value} alt="drop" style={{ maxHeight: 40 }} />;
+    if (currentItem.contentType === "word") {
+      return currentItem.value;
+    }
 
-    return (
-      <DraggableItem item={currentItem}>
-        <span style={{ color: currentItem.isCorrect ? "green" : "red" }}>
-          {base}
-        </span>
-      </DraggableItem>
-    );
+    return <img src={currentItem.value} alt="drop" style={{ maxHeight: 40 }} />;
   };
 
   return (
-    <span ref={drop} style={{
-        display: 'inline-block'
-    }}>
-        {renderContent()}
+    <span
+      ref={drop}
+      style={{
+        display: 'inline-block',
+        minWidth: '70px',
+        margin: '0 5px',
+        borderBottom: '2px solid #00ffcc',
+        padding: '2px 6px',
+        verticalAlign: 'middle',
+        cursor: 'pointer',
+        color: currentItem?.isCorrect ? 'lightgreen' : 'red',
+        fontWeight: 'bold',
+        userSelect: 'none',
+      }}
+    >
+      {renderContent()}
     </span>
-  )
+  );
 }
 
 export default DropTarget;

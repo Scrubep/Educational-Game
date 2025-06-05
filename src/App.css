@@ -1,10 +1,11 @@
 /* Navigation Styling */
 .navbar {
+  font-family: 'Barlow', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #2c3e50;
+  background-color: #083b6f;
   color: white;
 }
 
@@ -29,4 +30,21 @@
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+footer {
+  text-align: center;
+  background-color: #083b6f;
+  color: white;
+  padding: 1rem;
 }

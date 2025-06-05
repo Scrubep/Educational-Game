@@ -1,16 +1,28 @@
 .memory-game {
     text-align: center;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 40px auto;
     user-select: none;
+    font-family: 'Barlow', sans-serif;
+    color: #00ffe7;
+    background: radial-gradient(ellipse at top, #0d0f1a 0%, #000000 100%);
+    border: 2px solid #00ffe7;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 20px #00ffe7;
+}
+
+.memory-game h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-shadow: 0 0 8px #00ffe7;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 80px);
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .card {
@@ -23,7 +35,7 @@
 .card-inner {
     width: 100%;
     height: 100%;
-    transition: transform 0.4s;
+    transition: transform 0.5s;
     transform-style: preserve-3d;
     position: relative;
 }
@@ -36,20 +48,26 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    font-size: 32px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
-    border-radius: 8px;
-    background: #f0f0f0;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 6px #00ffe7;
 }
 
 .card-front {
-    background: #bbb;
+    background: #1a1f2e;
+    color: #00ffe7;
+    font-size: 32px;
+    border: 2px solid #00ffe7;
 }
 
 .card-back {
-    background: #fff;
+    background: #12141c;
     transform: rotateY(180deg);
+    font-size: 32px;
+    border: 2px solid #00ffe7;
 }
