@@ -5,7 +5,7 @@ import './Home.css';
 function Home() {
     return(
         <>
-            <section>
+            <section className='game-section'>
                 <div className='welcome-container'>
                     <h1>Welcome to Space!</h1>
                     <p>My name is [insert name] and welcome to my adventure! We’re gonna have 
@@ -14,7 +14,7 @@ function Home() {
                 </div>
             </section>
 
-            <section>
+            <section className='game-section'>
                 <div>
                     <Link to='/game1'>
                         <img src='https://placehold.co/200x200/png'/>
@@ -32,9 +32,9 @@ function Home() {
                 </div>
             </section>
 
-            <section>
+            <section className='game-section'>
                 <div>
-                    <Link to='game3'>
+                    <Link to='/game3'>
                         <img src='https://placehold.co/200x200/png'/>
                     </Link>
                     <p>Game 3</p>

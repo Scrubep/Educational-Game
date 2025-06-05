@@ -1,0 +1,25 @@
+.spaceship-game {
+  padding: 20px;
+}
+
+.target-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.target-container {
+  text-align: center;
+  min-width: 120px;
+}
+
+.target-label {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.source-items {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

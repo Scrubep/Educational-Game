@@ -45,9 +45,36 @@ function WordDropGame({ onComplete }) {
 
     return (
         <DndProvider backend={HTML5Backend}>
-            <p>The <DropTarget index={0} expectedItemId={1} onDropItem={handleDropItem} currentItem={filledSlots[0]}/></p>
-            <p>The <DropTarget index={1} expectedItemId={2} onDropItem={handleDropItem} currentItem={filledSlots[1]}/></p>
-            <p>The <DropTarget index={2} expectedItemId={3} onDropItem={handleDropItem} currentItem={filledSlots[2]}/></p>
+            <p>
+            The{" "}
+            <DropTarget
+                key={filledSlots[0]?.id || "empty-0"}
+                index={0}
+                expectedItemId={1}
+                onDropItem={handleDropItem}
+                currentItem={filledSlots[0]}
+            />
+            </p>
+            <p>
+            The{" "}
+            <DropTarget
+                key={filledSlots[1]?.id || "empty-1"}
+                index={1}
+                expectedItemId={2}
+                onDropItem={handleDropItem}
+                currentItem={filledSlots[1]}
+            />
+            </p>
+            <p>
+            The{" "}
+            <DropTarget
+                key={filledSlots[2]?.id || "empty-2"}
+                index={2}
+                expectedItemId={3}
+                onDropItem={handleDropItem}
+                currentItem={filledSlots[2]}
+            />
+            </p>
 
             <div style={{ display: "flex", gap: "10px" }}>
             <SourceList onReturnItem={(item) => handleReturnToBank(item)}>
