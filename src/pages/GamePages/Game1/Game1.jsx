@@ -5,6 +5,8 @@ import WordDropGame from '../../../components/Games/WordDropGame/WordDropGame';
 import TransitionScreen from '../../../components/TransitionScreen/TransitionScreen';
 import '../GamePage.css';
 
+// Game 1 of the website where the user can play the riddle game
+// and the word drop game.
 function Game1() {
     
     const [stage, setStage] = useState('transition0');

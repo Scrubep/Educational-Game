@@ -6,6 +6,8 @@ import DropTarget from "../../DropTarget/DropTarget";
 import SourceList from "../../SourceList/SourceList";
 import "./SpaceshipGame.css";
 
+// A drag and drop game where the user assembles their spaceship. Still needs some work
+// since I don't have any image assets yet.
 const initialItems = [
   { id: "cockpit", contentType: "image", value: "https://placehold.co/100x100?text=Cockpit" },
   { id: "wing", contentType: "image", value: "https://placehold.co/100x100?text=Wing" },

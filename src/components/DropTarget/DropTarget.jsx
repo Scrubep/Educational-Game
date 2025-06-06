@@ -1,6 +1,8 @@
 import { useDrop } from "react-dnd";
 import { ItemTypes } from "../constants";
 
+// Component for dropping draggable items. Still need to figure out how to implement
+// silhouettes for images.
 function DropTarget({ index, onDropItem, currentItem, expectedItemId }) {
   const [{ isOver }, drop] = useDrop(() => ({
     accept: ItemTypes.DRAG_ITEM,

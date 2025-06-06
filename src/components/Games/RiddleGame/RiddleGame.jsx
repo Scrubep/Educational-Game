@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './RiddleGame.css';
 
+// Riddle game where user has to answer a few brain teasers.
 const riddles = [
     {
     question: "I’m full of keys but I can’t open doors. What am I?",

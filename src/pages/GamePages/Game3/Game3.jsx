@@ -4,6 +4,8 @@ import SpaceshipGame from '../../../components/Games/SpaceshipGame/SpaceShipGame
 import MathGame from '../../../components/Games/MathGame/MathGame';
 import TransitionScreen from '../../../components/TransitionScreen/TransitionScreen';
 
+// Game where the user can play the spaceship assembly game
+// and the math game.
 function Game3() {
     
     const [stage, setStage] = useState('transition0');

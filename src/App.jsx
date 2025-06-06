@@ -10,6 +10,9 @@ import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
+// The base of the website where all the routing is defined.
+// App also defines the template of the website with the navbar on
+// top, the main content in the middle, and the footer at the end.
 function App() {
     const [darkTheme, setDarkTheme] = useState(false);
 

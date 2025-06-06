@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import './ReflexGame.css';
 
+// Game where user needs to click on all targets before
+// time runs out.
 function ReflexGame({ onComplete }) {
     const totalSpots = 20;
     const totalTargets = 10;

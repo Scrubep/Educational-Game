@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './MathGame.css';
 
+// A game to help students with learning math,
 function MathGame({ onComplete }) {
   const problems = [
     {

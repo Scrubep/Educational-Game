@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+// Component to guarantee that the user will start at the top
+// of the page when navigating to a different route.
 function ScrollToTop() {
   const { pathname } = useLocation();
 

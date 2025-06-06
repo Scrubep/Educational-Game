@@ -6,6 +6,8 @@ import DropTarget from "../../DropTarget/DropTarget";
 import SourceList from '../../SourceList/SourceList';
 import './WordDropGame.css';
 
+// Word drop game where the user finishes a sentence with context clues. Need to fix
+// drag and drop so that user can move words after being placed.
 function WordDropGame({ onComplete }) {
     const [filledSlots, setFilledSlots] = useState([null, null, null, null, null]);
 

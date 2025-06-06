@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import './MemoryGame.css'; // Optional styling file
 
+// A memory card game where the user must match icons in
+// a 4 x 4 grid.
 function MemoryGame({ onComplete }) {
     const gridSize = 4;
     const totalCards = gridSize * gridSize;

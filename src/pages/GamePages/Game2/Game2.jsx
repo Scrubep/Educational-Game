@@ -4,6 +4,8 @@ import ReflexGame from '../../../components/Games/ReflexGame/ReflexGame';
 import MemoryGame from '../../../components/Games/MemoryGame/MemoryGame';
 import TransitionScreen from '../../../components/TransitionScreen/TransitionScreen';
 
+// Game 2 where the user can play the reflex game and the
+// memory card game.
 function Game2() {
     
     const [stage, setStage] = useState('transition0');
