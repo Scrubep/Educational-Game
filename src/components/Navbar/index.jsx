@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+// Navbar for the website.
 const Navbar = function Navbar({darkTheme, setDarkTheme}) {
     return (
         <nav className='navbar'>

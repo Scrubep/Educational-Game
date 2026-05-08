@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Settings.css';
 
+// Settings page for the website. In progress.
 function Settings() {
     // State for theme preference
     const [darkMode, setDarkMode] = useState(false);

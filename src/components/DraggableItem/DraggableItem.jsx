@@ -1,6 +1,7 @@
 import { useDrag } from 'react-dnd';
 import { ItemTypes } from "../constants";
 
+// Component for draggable items, used for word drop game and spaceship game.
 function DraggableItem({ item }) {
     const [{isDragging }, drag] = useDrag(() => ({
         type: ItemTypes.DRAG_ITEM,

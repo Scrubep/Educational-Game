@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './About.css';
 
+// About page for the website. In progress.
 function About() {
     
     useEffect(() => {

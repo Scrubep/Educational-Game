@@ -1,5 +1,6 @@
 import './transitionScreen.css'
 
+// Transitions between each game.
 function TransitionScreen({ message, onContinue }) {
     return (
         <div className="transition-screen">
